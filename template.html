@@ -14,12 +14,13 @@
             overflow-x: hidden;
         }
 
-        #background-video {
+        #background-gif {
             position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             z-index: -1;
         }
 
@@ -37,9 +38,9 @@
         }
 
         .logo {
-            width: 180px; /* Further increased size */
-            height: 180px; /* Further increased size */
-            background-color: #F0F3BD; width: 190px; height: 190px;
+            width: 190px;
+            height: 190px;
+            background-color: #F0F3BD;
             border-radius: 50%;
             margin-bottom: 20px;
             display: flex;
@@ -49,10 +50,11 @@
         }
 
         .logo img {
-    width: 85%;
-    height: 85%;
-    object-fit: contain;
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
         }
+
         .nav-button {
             display: block;
             width: 100%;
@@ -111,14 +113,15 @@
         }
 
         .coral-image {
-            width: 100%;
+            width: 90%;
             border-radius: 10px;
             overflow: hidden;
         }
 
         .coral-image img {
-            width: 100%;
+            width: 90%;
             height: auto;
+            border-radius: 10px;
         }
 
         .content-list {
@@ -163,16 +166,15 @@
         }
 
         h1 {
+            text-align: center;
             color: #F0F3BD;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             font-size: 36px;
         }
     </style>
 </head>
 <body>
-    <video autoplay muted loop id="background-video">
-        <source src="Ai background test/Background Video .mov" type="video/mp4">
-    </video>
+    <img src="images/backloop.gif" id="background-gif" alt="Background Animation">
 
     <div class="sidebar">
         <div class="logo">
