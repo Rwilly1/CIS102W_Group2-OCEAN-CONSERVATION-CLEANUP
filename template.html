@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Conservation & Cleanup</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+            color: white;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 180px;
+            height: 100vh;
+            background-color: #05668D;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            width: 180px; /* Further increased size */
+            height: 180px; /* Further increased size */
+            background-color: #F0F3BD; width: 190px; height: 190px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .logo img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+        }
+        .nav-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            border: none;
+            border-radius: 22px;
+            color: #05668D;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: normal;
+            transition: opacity 0.2s;
+        }
+
+        .nav-button:hover {
+            opacity: 0.9;
+        }
+
+        .nav-button.home {
+            background-color: #F0F3BD;
+        }
+
+        .nav-button.about {
+            background-color: #00A896;
+            color: white;
+        }
+
+        .nav-button.get-involved {
+            background-color: #02C39A;
+            color: white;
+        }
+
+        .nav-button.contact {
+            background-color: #028090;
+            color: white;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 50px;
+            position: relative;
+        }
+
+        .content-box {
+            background-color: rgba(0, 168, 150, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .coral-image {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .coral-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-list li {
+            margin: 15px 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content-list li:before {
+            content: "•";
+            margin-right: 10px;
+            color: #F0F3BD;
+        }
+
+        .social-links {
+            position: absolute;
+            bottom: 60px;
+            left: 15px;
+            right: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 3px;
+            font-size: 12px;
+        }
+
+        .copyright {
+            font-size: 10px;
+            text-align: center;
+            margin-top: 5px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            color: #F0F3BD;
+            margin-bottom: 30px;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="Ai background test/Background Video .mov" type="video/mp4">
+    </video>
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Ocean Conservation Logo">
+        </div>
+        <button class="nav-button home">Home</button>
+        <button class="nav-button about">About</button>
+        <button class="nav-button get-involved">Get Involved</button>
+        <button class="nav-button contact">Contact</button>
+        
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+            <div class="copyright">&copy; 2025 Ocean Conservation & Cleanup. All Rights Reserved.</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="content-box">
+            <h1>Ocean Conservation & Cleanup</h1>
+            <div class="content-grid">
+                <div class="coral-image">
+                    <img src="coral-reef.jpg" alt="Vibrant coral reef with fish">
+                </div>
+                <div class="content-list">
+                    <ul>
+                        <li>Mission Statement</li>
+                        <li>Impact Section</li>
+                        <li>Ways to Help</li>
+                        <li>Testimonials</li>
+                        <li>Advocacy & Awareness</li>
+                        <li>Emotional Appeal</li>
+                        <li>History & Founders</li>
+                        <li>Etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
