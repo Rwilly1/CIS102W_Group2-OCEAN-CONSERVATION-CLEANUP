@@ -55,6 +55,31 @@
             object-fit: contain;
         }
 
+       .search-bar {
+    		width: 100%;
+    		padding: 12px;
+    		margin: 6px 0;
+    		border-radius: 22px;
+    		border: none; /* Remove black rim */
+    		font-size: 16px;
+    		box-sizing: border-box;
+    		color: #05668D;
+    		background-color: #FFFFFF;
+    		text-align: center; /* Center horizontally */
+    		line-height: 1.4; /* Control vertical alignment */
+    		outline: none; /* Optional: remove focus outline */
+		}	
+
+
+        .search-bar::placeholder {
+            color: #05668D;
+            opacity: 0.7;
+        }
+
+        .search-bar:focus {
+            background-color: #FFFFFF;
+        }
+
         .nav-button {
             display: block;
             width: 100%;
@@ -180,10 +205,14 @@
         <div class="logo">
             <img src="images/logo.png" alt="Ocean Conservation Logo">
         </div>
+        
+
         <button class="nav-button home">Home</button>
         <button class="nav-button about">About</button>
         <button class="nav-button get-involved">Get Involved</button>
         <button class="nav-button contact">Contact</button>
+        
+         <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
         
         <div class="social-links">
             <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
@@ -199,7 +228,7 @@
                     <img src="images/reef.jpg" alt="Vibrant coral reef with fish">
                 </div>
                 <div class="content-list">
-                    <ul>
+                    <ul id="contentList">
                         <li>Mission Statement</li>
                         <li>Impact Section</li>
                         <li>Ways to Help</li>
@@ -213,5 +242,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const contentList = document.getElementById('contentList');
+        const listItems = contentList.getElementsByTagName('li');
+
+        searchBar.addEventListener('keyup', function() {
+            const filter = searchBar.value.toLowerCase();
+
+            for (let i = 0; i < listItems.length; i++) {
+                const txtValue = listItems[i].textContent || listItems[i].innerText;
+
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    listItems[i].style.display = "";
+                } else {
+                    listItems[i].style.display = "none";
+                }
+            }
+        });
+    </script>
 </body>
 </html>
+
+
