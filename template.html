@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean Conservation & Cleanup</title>
+    <title>Ocean Conservation & Cleanup Crew</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             margin: 0;
@@ -36,13 +37,26 @@
             flex-direction: column;
             align-items: center;
         }
+        
+        .sidebar-title {
+   			color: #F0F3BD; /* Same as your buttons or desired color */
+    		font-size: 18px;
+    		margin-bottom: 10px;
+    		text-align: center;
+   			font-weight: bold;
+		}
+		
+		.coral-sidebar-image {
+    		width: 100%;
+   	 		max-width: 175px; /* Adjust size */
+    		border-radius: 10px;
+		}
 
         .logo {
             width: 190px;
             height: 190px;
             background-color: #F0F3BD;
             border-radius: 50%;
-            margin-bottom: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -83,7 +97,7 @@
         .nav-button {
             display: block;
             width: 100%;
-            padding: 12px;
+            padding: 15px;
             margin: 6px 0;
             border: none;
             border-radius: 22px;
@@ -206,6 +220,7 @@
             <img src="images/logo.png" alt="Ocean Conservation Logo">
         </div>
         
+        <h2 class="sidebar-title">Ocean Conservation & Cleanup Crew</h2> <!-- New title added here -->
 
         <button class="nav-button home">Home</button>
         <button class="nav-button about">About</button>
@@ -213,16 +228,19 @@
         <button class="nav-button contact">Contact</button>
         
          <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+         
+        <img src="images/coral.png" alt="Coral" class="coral-sidebar-image">
+
         
         <div class="social-links">
             <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-            <div class="copyright">&copy; 2025 Ocean Conservation & Cleanup. All Rights Reserved.</div>
+            <div class="copyright">Ocean Conservation & Cleanup Crew. 2025 &copy; All Rights Reserved. </div>
         </div>
     </div>
 
     <div class="main-content">
         <div class="content-box">
-            <h1>Ocean Conservation & Cleanup</h1>
+            <h1>Ocean Conservation & Cleanup Crew</h1>
             <div class="content-grid">
                 <div class="coral-image">
                     <img src="images/reef.jpg" alt="Vibrant coral reef with fish">
@@ -262,7 +280,7 @@
             }
         });
     </script>
+    <script src="script.js"></script> 
 </body>
 </html>
-
 
