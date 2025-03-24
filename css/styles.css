@@ -148,12 +148,18 @@ body {
     cursor: pointer;
     text-align: center;
     font-weight: normal;
-    transition: opacity 0.2s;
+    transition: all 0.2s;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .nav-button:hover {
     opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.nav-button:active {
+    transform: scale(0.98);
 }
 
 .nav-button.home {
@@ -533,60 +539,75 @@ h3 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .main-content {
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    .content-box {
-        padding: 20px;
-    }
-
     .mobile-menu-button {
         display: flex;
     }
 
     .sidebar {
         transform: translateX(-100%);
+        width: 250px;
+        padding: 20px;
+        align-items: center;
     }
 
     .sidebar.active {
         transform: translateX(0);
     }
 
-    .stats-grid, .programs-grid, .involvement-grid, .news-grid {
-        grid-template-columns: 1fr;
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .nav-button {
+        padding: 16px;
+        margin: 8px auto;
+        font-size: 18px;
+        width: 90%;
+        max-width: 300px;
     }
 
     .cta-buttons {
+        display: flex;
         flex-direction: column;
         gap: 15px;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 40px 0 auto;
     }
 
     .cta-button {
         width: 100%;
+        padding: 16px;
+        font-size: 18px;
+        margin: 0;
+        min-height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
     }
-}
 
-/* Social Links */
-.social-links {
-    text-align: center;
-    font-size: 12px;
-    padding: 5px 0;
-}
+    .action-link {
+        padding: 14px;
+        font-size: 16px;
+        display: inline-block;
+        width: auto;
+        min-width: 200px;
+        text-align: center;
+    }
 
-.social-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 3px;
-    font-size: 12px;
-}
+    .social-links-inline {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
 
-.copyright {
-    font-size: 10px;
-    text-align: center;
-    margin-top: 5px;
-    color: rgba(255, 255, 255, 0.8);
+    .social-link {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
 }
 
 /* Mobile Styles */
@@ -597,6 +618,8 @@ h3 {
 
     .sidebar {
         transform: translateX(-100%);
+        width: 250px;
+        padding: 20px;
     }
 
     .sidebar.active {
@@ -631,3 +654,25 @@ h3 {
         margin: 10px 0;
     }
 }
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 3px;
+    font-size: 12px;
+}
+
+.copyright {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
