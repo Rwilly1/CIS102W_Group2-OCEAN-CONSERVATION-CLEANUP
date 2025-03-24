@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Conservation & Cleanup Crew</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, sans-serif;
+            color: white;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        #background-gif {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 180px;
+            height: 100vh;
+            background-color: #05668D;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .sidebar-title {
+   			color: #F0F3BD; /* Same as your buttons or desired color */
+    		font-size: 18px;
+    		margin-bottom: 10px;
+    		text-align: center;
+   			font-weight: bold;
+		}
+		
+		.coral-sidebar-image {
+    		width: 100%;
+   	 		max-width: 175px; /* Adjust size */
+    		border-radius: 10px;
+		}
+
+        .logo {
+            width: 190px;
+            height: 190px;
+            background-color: #F0F3BD;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .logo img {
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
+        }
+
+       .search-bar {
+    		width: 100%;
+    		padding: 12px;
+    		margin: 6px 0;
+    		border-radius: 22px;
+    		border: none;
+    		font-size: 16px;
+    		box-sizing: border-box;
+    		color: #05668D;
+    		background-color: #FFFFFF;
+    		text-align: center;
+    		line-height: 1.4;
+    		outline: none;
+		}	
+
+        .search-bar::placeholder {
+            color: #05668D;
+            opacity: 0.7;
+        }
+
+        .search-bar:focus {
+            background-color: #FFFFFF;
+        }
+
+        .nav-button {
+            display: block;
+            width: calc(100% - 30px);
+            padding: 15px;
+            margin: 6px 0;
+            border: none;
+            border-radius: 22px;
+            color: #05668D;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: normal;
+            transition: opacity 0.2s;
+            text-decoration: none;
+        }
+
+        .nav-button:hover {
+            opacity: 0.9;
+        }
+
+        .nav-button.home {
+            background-color: #F0F3BD;
+        }
+
+        .nav-button.about {
+            background-color: #00A896;
+            color: white;
+        }
+
+        .nav-button.get-involved {
+            background-color: #02C39A;
+            color: white;
+        }
+
+        .nav-button.contact {
+            background-color: #028090;
+            color: white;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 50px;
+            position: relative;
+        }
+
+        .content-box {
+            background-color: rgba(0, 168, 150, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .coral-image {
+            width: 90%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .coral-image img {
+            width: 90%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content-list li {
+            margin: 15px 0;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content-list li:before {
+            content: "•";
+            margin-right: 10px;
+            color: #F0F3BD;
+        }
+
+        .social-links {
+            position: absolute;
+            bottom: 60px;
+            left: 15px;
+            right: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 3px;
+            font-size: 12px;
+        }
+
+        .copyright {
+            font-size: 10px;
+            text-align: center;
+            margin-top: 5px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        h1 {
+            text-align: center;
+            color: #F0F3BD;
+            margin-bottom: 40px;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/backloop.gif" id="background-gif" alt="Background Animation">
+
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Ocean Conservation Logo">
+        </div>
+        
+        <h2 class="sidebar-title">Ocean Conservation & Cleanup Crew</h2> <!-- New title added here -->
+
+        <a href="index.html" class="nav-button home">Home</a>
+        <a href="about.html" class="nav-button about">About</a>
+        <a href="get-involved.html" class="nav-button get-involved">Get Involved</a>
+        <a href="contact.html" class="nav-button contact">Contact</a>
+        
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+         
+        <img src="images/coral.png" alt="Coral" class="coral-sidebar-image">
+
+        
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> | <a href="https://www.twitter.com" target="_blank">Twitter</a> | <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <div class="copyright">Ocean Conservation & Cleanup Crew<br>2025 &copy; All Rights Reserved.</div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="content-box">
+            <h1>Ocean Conservation & Cleanup Crew</h1>
+            <div class="content-grid">
+                <div class="coral-image">
+                    <img src="images/reef.jpg" alt="Vibrant coral reef with fish">
+                </div>
+                <div class="content-list">
+                    <ul id="contentList">
+                        <li>Mission Statement</li>
+                        <li>Impact Section</li>
+                        <li>Ways to Help</li>
+                        <li>Testimonials</li>
+                        <li>Advocacy & Awareness</li>
+                        <li>Emotional Appeal</li>
+                        <li>History & Founders</li>
+                        <li>Etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const searchBar = document.getElementById('searchBar');
+        const contentList = document.getElementById('contentList');
+        const listItems = contentList.getElementsByTagName('li');
+
+        searchBar.addEventListener('keyup', function() {
+            const filter = searchBar.value.toLowerCase();
+
+            for (let i = 0; i < listItems.length; i++) {
+                const txtValue = listItems[i].textContent || listItems[i].innerText;
+
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    listItems[i].style.display = "";
+                } else {
+                    listItems[i].style.display = "none";
+                }
+            }
+        });
+    </script>
+    <script src="script.js"></script> 
+</body>
+</html>
