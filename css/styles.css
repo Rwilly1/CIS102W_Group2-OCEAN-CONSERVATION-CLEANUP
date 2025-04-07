@@ -777,3 +777,56 @@ h3 {
     font-size: 1.1em;
     line-height: 1.6;
 }
+
+/*Get Involved Page*/
+.simple-help-section{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.help-text{
+    font-size: 1.05em;
+    margin: 15px auto;
+    max-width: 100%;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 20px;
+}
+.simple-help-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+.simple-help-card{
+    background: rgba(2, 195, 154, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    
+}
+.simple-help-card img{
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+}
+.simple-help-card h3{
+    padding: 15px 15px 5px;
+    margin: 0;
+}
+.simple-help-card p{
+    max-height: 0;
+    padding: 5px 15px 15px;
+    margin: 0;
+    font-size: 0.95em;
+    line-height: 1.4;
+    opacity: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.35s ease-in-out 0.2s;
+    
+}
+.simple-help-card:hover p{
+    max-height: 200px;
+    opacity: 1;
+    
+}
