@@ -110,29 +110,111 @@ body {
     object-fit: contain;
 }
 
-/* Search bar */
-.search-bar {
+/* Search Container and Results Styles */
+.search-container {
+    position: relative;
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 22px;
-    border: none;
-    font-size: 16px;
+    padding: 10px 0;
     box-sizing: border-box;
-    color: #05668D;
-    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+#searchBar {
+    width: 98%;
+    margin: 0;
+    padding: 12px 20px;
+    border: 2px solid #02C39A;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
     text-align: center;
-    line-height: 1.4;
-    outline: none;
-}
-
-.search-bar::placeholder {
     color: #05668D;
-    opacity: 0.7;
 }
 
-.search-bar:focus {
-    background-color: #FFFFFF;
+.search-results {
+    display: none;
+    position: absolute;
+    top: calc(100% - 10px);
+    left: 1%;
+    right: 1%;
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    scrollbar-width: thin;
+    scrollbar-color: #02C39A #f1f1f1;
+}
+
+.search-result-item {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #05668D;
+    border-bottom: 1px solid rgba(5, 102, 141, 0.1);
+    transition: all 0.2s ease;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background-color: rgba(5, 102, 141, 0.1);
+    text-decoration: none;
+}
+
+.search-result-item h4 {
+    margin: 0 0 5px 0;
+    color: #05668D;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.search-result-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #05668D;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+.search-result-item.no-results {
+    text-align: center;
+    color: #05668D;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.search-result-item .highlight {
+    background-color: rgba(5, 102, 141, 0.15);
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #05668D;
+    font-weight: 600;
+}
+
+/* Scrollbar Styles */
+.search-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-results::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+    background: #02C39A;
+    border-radius: 3px;
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+    background: #05668D;
 }
 
 /* Navigation buttons */
@@ -869,6 +951,28 @@ h3 {
     display: block;
     width: 100%;
     border-radius: 8px;
+}
+
+/* Climate Change Warning Section */
+.climate-change-section .content-box {
+    padding: 3rem 2rem;
+    background-color: rgba(240, 243, 189, 0.7);
+}
+
+.climate-change-section h2 {
+    color: #05668D;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.climate-change-section p {
+    color: #05668D;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* Awards and Partnerships Section */
