@@ -876,6 +876,90 @@ h3 {
     line-height: 1.6;
 }
 
+/* Team Section Styles */
+.team-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-member {
+    background: rgba(2, 195, 154, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-image {
+    width: 120px;
+    height: 120px;
+    background-color: #02C39A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.member-emoji {
+    font-size: 4em;
+    line-height: 1;
+}
+
+.team-member h3 {
+    color: #F0F3BD;
+    margin-bottom: 5px;
+}
+
+.member-title {
+    color: #02C39A;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.member-bio {
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+/* Results Section*/
+.results-grid {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.coralReef-image img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coralReef-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.results-section h3 {
+    text-align: center;
+    margin-top: 20px;
+    color: #F0F3BD;
+    font-size: 1.3em;
+}
+
 /*Get Involved Page*/
 .simple-help-section{
     text-align: center;
