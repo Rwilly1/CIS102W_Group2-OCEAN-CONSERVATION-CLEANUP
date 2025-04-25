@@ -48,25 +48,16 @@ document.addEventListener('DOMContentLoaded', function() {
                      Collaborating on marine research and data collection initiatives
                      World Wildlife Fund
                      Partnership for marine species protection and habitat conservation
-                     Ocean News
-                     Revolutionary Ocean Plastic Recycling Technology Unveiled
-                     Scientists have developed a groundbreaking method to convert ocean plastic waste into biodegradable materials, potentially revolutionizing marine cleanup efforts and offering a sustainable solution to plastic pollution.
-                     Global Ocean Treaty Reaches Major Milestone
-                     The High Seas Treaty has achieved a significant milestone as 100 nations ratify the agreement, strengthening international cooperation for ocean protection and establishing new marine protected areas in international waters.
+                     Latest News
                      Artificial Reefs Show Promising Results in Marine Recovery
                      A network of 3D-printed artificial reefs deployed last year has shown remarkable success in supporting marine biodiversity, with scientists reporting rapid colonization by coral species and increased fish populations.
-                     Global Coral Bleaching Alert: UN Calls for Urgent Action
-                     The United Nations' special envoy warns that the world is not doing enough to protect coral reefs, as the fourth global bleaching event is recorded. These vital marine ecosystems, which protect biodiversity and produce oxygen, are facing unprecedented challenges.
-                     Historic Court Ruling: Nations Must Protect Oceans from Climate Change
-                     The International Tribunal for the Law of the Sea has made a landmark ruling declaring that nations must protect oceans from greenhouse gas emissions, marking a significant victory for marine conservation efforts worldwide.
-                     NOAA Reports Fourth Global Coral Bleaching Event
-                     The U.S. National Oceanic and Atmospheric Administration (NOAA) has recorded a fourth global coral bleaching event between February 2023 and April 2024, raising concerns about the increasing frequency of marine heatwaves.
                      Major Ocean Clean-up Initiative Launches in Pacific
-                     A groundbreaking initiative to remove plastic waste from the Great Pacific Garbage Patch has been launched, utilizing innovative technology to collect and recycle ocean debris while protecting marine life.`.toLowerCase()
+                     A groundbreaking initiative to remove plastic waste from the Great Pacific Garbage Patch has been launched, utilizing innovative technology to collect and recycle ocean debris while protecting marine life.
+                     Webpage developed by Remington Williams`.toLowerCase()
         },
         'about.html': {
             title: 'About',
-            content: `About Our Mission
+            content: `About Us
                      Our Story
                      Ocean Conservation & Cleanup Crew was founded in hopes of making our oceans cleaner one day at a time.
                      Today, we are at the forefront of ocean conservation efforts, partnering with research institutions, governments, and communities to protect marine ecosystems for future generations. Our combination of direct action, scientific research, and education initiatives makes us uniquely positioned to address the complex challenges facing our oceans.
@@ -79,35 +70,75 @@ document.addEventListener('DOMContentLoaded', function() {
                      We organize and execute large-scale cleanup operations targeting beaches, coastlines, and ocean waters to remove harmful debris and pollutants.
                      Educate
                      We believe in the power of education to drive lasting change, and we work to raise awareness about ocean conservation through schools, communities, and digital platforms.
+                     Meet Our Team
+                     Dr. Michael Barnes
+                     Marine Biologist & Founder
+                     With over 15 years of experience in marine conservation, Dr. Barnes founded Ocean Conservation & Cleanup Crew after witnessing firsthand the devastating effects of plastic pollution on coral reefs.
+                     Nichole Hahn
+                     Coral Restoration Specialist
+                     Nichole leads our coral nursery programs and has developed innovative methods for coral fragmentation and growth that have been adopted by conservation groups worldwide.
+                     Lynne Foster
+                     Operations Director
+                     Lynne oversees all of our cleanup operations, coordinating thousands of volunteers across multiple continents and ensuring maximum impact with our limited resources.
+                     Dr. Antoine Frazier
+                     Education Program Director
+                     Dr. Antoine develops our educational resources and outreach programs, bringing ocean conservation into classrooms and communities around the world.
+                     Our Results
+                     This is a Coral Reef Before and After being restored by our team
                      Our Impact
                      10,000+ Volunteers Worldwide
                      100+ Coral Reefs Protected
                      50,000+ Pounds of Ocean Waste Removed
                      Join Our Mission
-                     We believe that everyone can make a difference in protecting our oceans. Whether you're a scientist, a student, or simply someone who cares about marine life, there's a place for you in our community.`.toLowerCase()
+                     We believe that everyone can make a difference in protecting our oceans. Whether you're a scientist, a student, or simply someone who cares about marine life, there's a place for you in our community.
+                     Webpage developed by Cory Jenks`.toLowerCase()
         },
         'get-involved.html': {
             title: 'Get Involved',
             content: `Get Involved
+                     Regardless of your age or background, your help can make the ocean a better place.
                      How Can You Help?
                      Lower Plastic Use
                      Plastic is the largest source of pollution in our oceans, with over 358 trillion microplastic particles floating just on the ocean's surface.
-                     Making small changes to your life, such as using reusable shopping bags or bottles, and opting for plastic-free alternatives can significantly reduce your plastic use.
+                     Making small changes to your life, such as opting for plastic-free alternatives and reusable items can significantly reduce your plastic use.
                      Reduce Greenhouse Gas Emissions
-                     Greenhouse gases, such as carbon dioxide and methane can trap heat from the sun, thus increasing the ocean's temperature and disturbing it's ecosystem.
+                     Greenhouse gases, such as carbon dioxide and methane, can trap heat from the sun, increasing the ocean's temperature and disturbing it's ecosystem.
+                     Just by reducing everyday habits like driving and electricity consumption, you can reduce your carbon footprint.
                      Reduce Chemical Use
-                     Toxic chemicals are one of the leading causes of pollution, which can easily be reduced by avoiding the use of pesticides, fertilizers, and finding environmentally-friendly alternatives.
-                     If You Want to Make a Bigger Impact..
+                     Toxic chemicals are one of the leading causes of pollution and can easily be reduced by avoiding the use of pesticides, fertilizers, and finding environmentally-friendly alternatives.
+                     If You Want to Make a Greater Impact..
                      Beach Cleanups
                      Volunteers are ALWAYS welcome. Regardless of age, you can participate in a beach cleanup and make our beaches and shores a better place for humans and marine animals alike.
                      Advocate for Organizations
-                     Spreading the word and supporting non-profit organizations working to reduce pollution in the ocean is a great way to to help combat the damage done to our oceans by inviting more people to join our cause.
-                     Support Legislation to Combat Ocean Pollution
-                     While working together as a community to improve our oceans is important, we also need legislation that improves waste management, adopts smart ocean policies and fights against climate change.`.toLowerCase()
+                     Spreading the word and supporting non-profit organizations is a great way to to help combat the damage done to our oceans by inviting more people to join our cause.
+                     Work With Our Partners
+                     Learn to Dive With PADI
+                     PADI is our official diving certification partner for our underwater conservation programs.
+                     PADI's scuba diving certification is globally recognized, never expires and allows you to dive anywhere in the world.
+                     Conduct Research With NOAA
+                     NOAA offers countless research opportunities for all ages, including students in both high school and college. NOAA also offers resources for educators to deepen their students' understanding of the climate and aquaculture science.
+                     Take Action With WWF
+                     Through the World Wildlife Fund, you can directly send messages and petitions to your government to support legislation and programs that help fight climate change and promote ecosystem conservation. 
+                     Webpage developed by Zender Rene Aurelien-Nikolai`.toLowerCase()
         },
         'contact.html': {
             title: 'Contact',
-            content: `Contact`.toLowerCase()
+            content: `Contact
+                     How to get in touch?
+                     To get in touch with us, simply use the contact information provided on this page, including our email, phone number, and mailing address. 
+                     You can also fill out the sign-up form below to receive updates and stay connected. For more details about our mission and how you can get involved, scroll down there's more information waiting for you below!
+                     Ocean Conservation & Cleanup Crew is committed to preserving marine ecosystems through education, action, and community engagement. We coordinate cleanups, raise awareness, and promote sustainable practices.
+                     Volunteer to help!
+                     Volunteering to help the ocean is a powerful way to protect marine life and preserve our planet's most vital ecosystems. It fosters a sense of community, raises environmental awareness, and allows individuals to make a tangible impact through beach cleanups, conservation efforts, and education. Every small action contributes to a healthier, more sustainable future for both people and the planet.
+                     Reduce Oil Spills
+                     One quart of oil can contaminate up to 250,000 gallons of ocean water. 
+                     Oil spills have devastating effects on marine life, smothering animals, damaging ecosystems, and taking years to fully recover from.
+                     Get in Touch
+                     Email: info@oceanconservation.org
+                     Phone: +1 (555) 123-4567
+                     Address: Ocean Drive, Brooklyn, 11224
+                     Complete the form below to get in touch and volunteer!
+                      Webpage developed by Justin Sindaco`.toLowerCase()
         }
     };
 
